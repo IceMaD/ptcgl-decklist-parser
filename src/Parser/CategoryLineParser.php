@@ -4,7 +4,7 @@ namespace Icemad\TcglDecklistParser\Parser;
 
 use Icemad\TcglDecklistParser\Model\CategoryLine;
 
-final class CategoryLineParser implements LineParserInterface
+final readonly class CategoryLineParser implements LineParserInterface
 {
     private const string LINE_REGEXP = '/^(?P<category>.+) : (?P<count>\d+)$/';
 

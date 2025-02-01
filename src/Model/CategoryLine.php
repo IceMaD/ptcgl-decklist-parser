@@ -2,7 +2,7 @@
 
 namespace Icemad\TcglDecklistParser\Model;
 
-readonly class CategoryLine implements LineInterface
+final readonly class CategoryLine implements LineInterface
 {
     public function __construct(
         private string $raw,
