@@ -2,6 +2,7 @@
   "name": "icemad/tcgl-decklist-parser",
   "description": "Library to parse decklist from Pokemon TCG Live",
   "type": "library",
+  "version": "1.0.0",
   "license": "MIT",
   "autoload": {
     "psr-4": {

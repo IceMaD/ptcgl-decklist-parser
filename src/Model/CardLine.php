@@ -2,7 +2,7 @@
 
 namespace Icemad\TcglDecklistParser\Model;
 
-readonly class CardLine implements LineInterface
+final readonly class CardLine implements LineInterface
 {
     public function __construct(
         private string $raw,
