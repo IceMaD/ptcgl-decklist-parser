@@ -5,7 +5,7 @@ namespace Icemad\TcglDecklistParser\Parser;
 use Icemad\TcglDecklistParser\Model\LineInterface;
 use Icemad\TcglDecklistParser\Model\ParsingResult;
 
-final readonly class DecklistParser
+final readonly class DecklistParser implements DecklistParserInterface
 {
     public function __construct(
         /** @var LineParserInterface[] */
