@@ -7,6 +7,7 @@ final readonly class CardLine implements LineInterface
     public function __construct(
         private string $raw,
         private int $count,
+        private string $name,
         private string $set,
         private int $cardNumber,
     ) {
@@ -20,6 +21,11 @@ final readonly class CardLine implements LineInterface
     public function getCount(): int
     {
         return $this->count;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 
     public function getRaw(): string
