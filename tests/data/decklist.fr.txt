@@ -9,7 +9,7 @@ Pokémon : 9
 1 Iron Bundle PAR 56
 4 Joltik SCR 50
 
-Dresseur : 12
+Dresseur: 12
 2 Area Zero Underdepths SCR 131
 2 Crispin SCR 133
 3 Future Booster Energy Capsule TEF 149
@@ -23,7 +23,7 @@ Dresseur : 12
 2 Boss's Orders PAL 172
 4 Arven SVI 166
 
-Énergie : 3
+Énergie : 3
 7 Basic {L} Energy SVE 12
 6 Basic {G} Energy SVE 9
 2 Basic {M} Energy SVE 16
