@@ -6,7 +6,7 @@ use Icemad\TcglDecklistParser\Model\CategoryLine;
 
 final readonly class CategoryLineParser implements LineParserInterface
 {
-    private const string LINE_REGEXP = '/^(?P<category>.+) : (?P<count>\d+)$/';
+    private const string LINE_REGEXP = '/^(?P<category>.+): (?P<count>\d+)$/';
 
     public function parse(string $line): ?CategoryLine
     {
@@ -17,7 +17,7 @@ final readonly class CategoryLineParser implements LineParserInterface
         return new CategoryLine(
             $line,
             (int) $matches['count'],
-            $matches['category'],
+            trim($matches['category'], characters: "\n\r\t\v\0 "),
         );
     }
 }
