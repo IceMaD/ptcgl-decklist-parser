@@ -26,8 +26,9 @@ jobs:
 
       - name: Run PHPStan
         run: |
-          vendor/bin/phpstan analyse -c phpstan.neon
+          vendor/bin/phpstan analyse 
 
       - name: Run PHPUnit
         run: |
-          vendor/bin/phpunit --configuration phpunit.xml
+          vendor/bin/phpunit
+          vendor/bin/coverage-check tests/coverage/clover.xml 100

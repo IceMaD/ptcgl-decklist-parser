@@ -24,7 +24,12 @@ $parser = new DecklistParser([
 $result = $parser->parse($deckList) // string containing decklist
 ```
 
+You can convert the result back to a string like this:
+
+```php
+$string = new DecklistFormatter()->format($result->getParsedLines());
+```
+
+
 The output is an instance of `Icemad\TcglDecklistParser\Model\ParsingResult`.
 It the parsing is successful, `ParsingResult::getParsingFailures` should return an empty array.
-
-

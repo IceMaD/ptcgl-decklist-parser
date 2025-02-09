@@ -18,7 +18,7 @@ class ParsingResultTest extends TestCase
     {
         $result = new ParsingResult([
             $categoryLine = new CategoryLine('Pokémon : 9', 9, 'Pokémon'),
-            $cardLine = new CardLine('1 Iron Treads TEF 118', 1, 'TEF', 118),
+            $cardLine = new CardLine('1 Iron Treads TEF 118', 1, 'Iron Treads','TEF', 118),
         ],
             [
                 $failure = 'unparsable',

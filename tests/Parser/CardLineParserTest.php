@@ -17,6 +17,7 @@ class CardLineParserTest extends TestCase
     public function testManagedLine(
         string $line,
         int $expectedCount,
+        string $expectedName,
         string $expectedSet,
         int $expectedCardNumber,
     ): void {
@@ -26,20 +27,21 @@ class CardLineParserTest extends TestCase
 
         self::assertNotNull($parsedLine);
         self::assertSame($expectedCount, $parsedLine->getCount());
+        self::assertSame($expectedName, $parsedLine->getName());
         self::assertSame($expectedSet, $parsedLine->getSet());
         self::assertSame($expectedCardNumber, $parsedLine->getCardNumber());
     }
 
     /**
-     * @return array<string, array{string, int, string, int}>
+     * @return array<string, array{string, int, string, string, int}>
      */
     public static function managedLineProvider(): array
     {
         return [
-            'Basic' => ['1 Latias ex SSP 76', 1, 'SSP', 76],
-            'Accent' => ['3 Boss\'s Orders PAL 172', 3, 'PAL', 172],
-            'Numbers' => ['3 Pokégear 3.0 SVI 186', 3, 'SVI', 186],
-            'Energy' => ['5 Basic {L} Energy SVE 12', 5, 'SVE', 12],
+            'Basic' => ['1 Latias ex SSP 76', 1, 'Latias ex', 'SSP', 76],
+            'Accent' => ['3 Boss\'s Orders PAL 172', 3, 'Boss\'s Orders', 'PAL', 172],
+            'Numbers' => ['3 Pokégear 3.0 SVI 186', 3, 'Pokégear 3.0', 'SVI', 186],
+            'Energy' => ['5 Basic {L} Energy SVE 12', 5, 'Basic {L} Energy', 'SVE', 12],
         ];
     }
 
