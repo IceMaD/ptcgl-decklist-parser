@@ -1,5 +1,5 @@
 {
-  "name": "icemad/tcgl-decklist-parser",
+  "name": "icemad/ptcgl-decklist-parser",
   "description": "Library to parse decklist from Pokemon TCG Live",
   "type": "library",
   "license": "MIT",
