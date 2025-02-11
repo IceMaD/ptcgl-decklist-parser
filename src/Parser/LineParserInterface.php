@@ -1,8 +1,8 @@
 <?php
 
-namespace Icemad\TcglDecklistParser\Parser;
+namespace Icemad\PtcglDecklistParser\Parser;
 
-use Icemad\TcglDecklistParser\Model\LineInterface;
+use Icemad\PtcglDecklistParser\Model\LineInterface;
 
 interface LineParserInterface
 {

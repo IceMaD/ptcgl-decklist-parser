@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Icemad\\TcglDecklistParser\\": "src/"
+      "Icemad\\PtcglDecklistParser\\": "src/"
     }
   },
   "autoload-dev": {

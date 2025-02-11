@@ -2,7 +2,7 @@
 
 namespace Tests\Model;
 
-use Icemad\TcglDecklistParser\Model\CategoryLine;
+use Icemad\PtcglDecklistParser\Model\CategoryLine;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Icemad\TcglDecklistParser\Formatter;
+namespace Icemad\PtcglDecklistParser\Formatter;
 
-use Icemad\TcglDecklistParser\Model\CardLine;
-use Icemad\TcglDecklistParser\Model\CategoryLine;
-use Icemad\TcglDecklistParser\Model\LineInterface;
+use Icemad\PtcglDecklistParser\Model\CardLine;
+use Icemad\PtcglDecklistParser\Model\CategoryLine;
+use Icemad\PtcglDecklistParser\Model\LineInterface;
 
 class DecklistFormatter implements DecklistFormatterInterface
 {

@@ -2,13 +2,13 @@
 
 namespace Tests\Parser;
 
-use Icemad\TcglDecklistParser\Model\CardLine;
-use Icemad\TcglDecklistParser\Model\CategoryLine;
-use Icemad\TcglDecklistParser\Model\LineInterface;
-use Icemad\TcglDecklistParser\Model\ParsingResult;
-use Icemad\TcglDecklistParser\Parser\CardLineParser;
-use Icemad\TcglDecklistParser\Parser\CategoryLineParser;
-use Icemad\TcglDecklistParser\Parser\DecklistParser;
+use Icemad\PtcglDecklistParser\Model\CardLine;
+use Icemad\PtcglDecklistParser\Model\CategoryLine;
+use Icemad\PtcglDecklistParser\Model\LineInterface;
+use Icemad\PtcglDecklistParser\Model\ParsingResult;
+use Icemad\PtcglDecklistParser\Parser\CardLineParser;
+use Icemad\PtcglDecklistParser\Parser\CategoryLineParser;
+use Icemad\PtcglDecklistParser\Parser\DecklistParser;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
