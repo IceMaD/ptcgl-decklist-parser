@@ -1,20 +1,23 @@
-# tcgl-decklist-parser
+# ptcgl-decklist-parser
 
-A parser for decklists in the Trading Card Game Live (TCGL) format.
+A parser for Pokemon TCG Live decklist
 
 ## Features
 
-- **Decklist Parsing**: Convert TCGL decklists into structured data for analysis or transformation.
+- **Decklist Parsing**: Convert PTCGL decklist string into structured data for analysis or transformation.
+- **Decklist Formatting**: Convert back structured data to decklist string.
 
 ## Installation
 
 To include this parser in your project, you can install it via Composer:
 
 ```bash
-composer require icemad/tcgl-decklist-parser
+composer require icemad/ptcgl-decklist-parser
 ```
 
-Then to use it:
+## Usage
+
+### Parsing
 
 ```php
 $parser = new DecklistParser([
@@ -24,12 +27,11 @@ $parser = new DecklistParser([
 $result = $parser->parse($deckList) // string containing decklist
 ```
 
-You can convert the result back to a string like this:
+The output is an instance of `Icemad\PtcglDecklistParser\Model\ParsingResult`.  
+It the parsing is successful, `ParsingResult::getParsingFailures` should return an empty array.
+
+### Formatting
 
 ```php
 $string = new DecklistFormatter()->format($result->getParsedLines());
 ```
-
-
-The output is an instance of `Icemad\TcglDecklistParser\Model\ParsingResult`.
-It the parsing is successful, `ParsingResult::getParsingFailures` should return an empty array.

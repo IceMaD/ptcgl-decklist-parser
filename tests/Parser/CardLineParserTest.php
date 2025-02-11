@@ -2,8 +2,8 @@
 
 namespace Tests\Parser;
 
-use Icemad\TcglDecklistParser\Model\CardLine;
-use Icemad\TcglDecklistParser\Parser\CardLineParser;
+use Icemad\PtcglDecklistParser\Model\CardLine;
+use Icemad\PtcglDecklistParser\Parser\CardLineParser;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\UsesClass;

@@ -2,9 +2,9 @@
 
 namespace Tests\Model;
 
-use Icemad\TcglDecklistParser\Model\CardLine;
-use Icemad\TcglDecklistParser\Model\CategoryLine;
-use Icemad\TcglDecklistParser\Model\ParsingResult;
+use Icemad\PtcglDecklistParser\Model\CardLine;
+use Icemad\PtcglDecklistParser\Model\CategoryLine;
+use Icemad\PtcglDecklistParser\Model\ParsingResult;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;

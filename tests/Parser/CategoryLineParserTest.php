@@ -2,9 +2,9 @@
 
 namespace Tests\Parser;
 
-use Icemad\TcglDecklistParser\Model\CategoryLine;
-use Icemad\TcglDecklistParser\Parser\CardLineParser;
-use Icemad\TcglDecklistParser\Parser\CategoryLineParser;
+use Icemad\PtcglDecklistParser\Model\CategoryLine;
+use Icemad\PtcglDecklistParser\Parser\CardLineParser;
+use Icemad\PtcglDecklistParser\Parser\CategoryLineParser;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\UsesClass;
@@ -59,4 +59,3 @@ class CategoryLineParserTest extends TestCase
         ];
     }
 }
-

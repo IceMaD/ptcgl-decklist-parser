@@ -1,8 +1,8 @@
 <?php
 
-namespace Icemad\TcglDecklistParser\Parser;
+namespace Icemad\PtcglDecklistParser\Parser;
 
-use Icemad\TcglDecklistParser\Model\CardLine;
+use Icemad\PtcglDecklistParser\Model\CardLine;
 
 final readonly class CardLineParser implements LineParserInterface
 {

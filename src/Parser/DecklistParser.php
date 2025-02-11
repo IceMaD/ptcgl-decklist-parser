@@ -1,9 +1,9 @@
 <?php
 
-namespace Icemad\TcglDecklistParser\Parser;
+namespace Icemad\PtcglDecklistParser\Parser;
 
-use Icemad\TcglDecklistParser\Model\LineInterface;
-use Icemad\TcglDecklistParser\Model\ParsingResult;
+use Icemad\PtcglDecklistParser\Model\LineInterface;
+use Icemad\PtcglDecklistParser\Model\ParsingResult;
 
 final readonly class DecklistParser implements DecklistParserInterface
 {

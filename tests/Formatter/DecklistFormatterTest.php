@@ -2,9 +2,9 @@
 
 namespace Formatter;
 
-use Icemad\TcglDecklistParser\Formatter\DecklistFormatter;
-use Icemad\TcglDecklistParser\Model\CardLine;
-use Icemad\TcglDecklistParser\Model\CategoryLine;
+use Icemad\PtcglDecklistParser\Formatter\DecklistFormatter;
+use Icemad\PtcglDecklistParser\Model\CardLine;
+use Icemad\PtcglDecklistParser\Model\CategoryLine;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
